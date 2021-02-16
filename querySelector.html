@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>
+     querySelector
+    </title>
+    <script>
+    function query() {
+     /* if (document.querySelector('h1').innerHTML === 'Hello!') {document.querySelector('h1').innerHTML = 'GoodBye!';}
+      else {
+        document.querySelector('h1').innerHTML = 'Hello!';
+      }
+    }) /*To reduce the time and code efficiancy we can write the below code*/ 
+    let heading = document.querySelector('h1');
+    if (heading.innerHTML === 'Hello!') {
+      heading.innerHTML = 'GoodBye!';
+      }else {
+        heading.innerHTML = 'Hello!';
+      }
+    }
+    </script>
+  </head>
+  <body>
+    <h1>Hello</h1>
+    <button onClick="query()">
+      query
+    </button>
+  </body>
+</html>

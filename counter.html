@@ -6,15 +6,24 @@
     </title>
     <script>
        let counter = 0;
-    function count() {
+      function count() {
       counter++;
-      alert(counter);
-    })
+      /*alert(counter);*/
+      document.querySelector('h1').innerHTML = counter;
+      0
+      if (counter % 10 === 0){
+        alert(`Count is now ${counter}`)
+      }
+    }
+    document.addEventListener('DOMContentLoaded', function(){/*addEventListener*/
+       document.querySelector('button').onclick = count;
+    });
+   
     </script>
   </head>
   <body>
-    <h1>Hello</h1>
-    <button onClick="count()">
+    <h1>0</h1>
+    <button>
       Count
     </button>
   </body>
